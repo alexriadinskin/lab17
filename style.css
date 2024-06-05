@@ -1,0 +1,103 @@
+/* Базові стилі для всього тла */
+body {
+    font-family: DniproCity, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Стилі для заголовків */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+/* Стилі для основного контенту */
+main {
+    padding: 20px;
+}
+
+/* Стилі для галереї */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.art-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.art-item img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.art-info {
+    padding: 10px;
+}
+
+.art-info h3 {
+    margin: 0.5em 0;
+    color: #555;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    width: 200px;
+    height: auto;
+}
+
+/* Стилі для навігаційного посилання */
+header a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #0056b3;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .art-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 90%;
+    }
+}
