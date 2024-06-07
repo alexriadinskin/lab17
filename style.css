@@ -8,7 +8,6 @@ body {
 }
 
 
-/* Стилі для заголовків */
 h1, h2 {
     text-align: center;
     color: #333;
@@ -19,7 +18,6 @@ h1, h2 {
 main {
     padding: 20px;
 }
-
 
 /* Стилі для галереї */
 .gallery {
@@ -42,7 +40,7 @@ main {
     margin: 10px;
     padding: 15px;
     width: 300px;
-    height: 400px; /* Фіксована висота для всіх боксів */
+    height: 450px; /* Збільшена висота для забезпечення місця для тексту */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s ease; /* Додаємо плавну анімацію трансформації */
@@ -55,7 +53,7 @@ main {
 
 .art-item img {
     max-width: 100%;
-    max-height: 250px; /* Обмежуємо максимальну висоту зображення */
+    max-height: 200px; /* Зменшена максимальна висота зображення */
     object-fit: cover; /* Зберігаємо пропорції зображення */
     border-radius: 8px 8px 0 0;
     transition: transform 0.3s ease; /* Додаємо плавну анімацію трансформації */
@@ -63,13 +61,14 @@ main {
 
 .art-info {
     padding: 10px;
+    height: calc(100% - 210px); /* Залишаємо простір для тексту, враховуючи висоту зображення та паддінги */
+    overflow: hidden; /* Приховуємо будь-який надлишковий текст */
 }
 
 .art-info h3 {
     margin: 0.5em 0;
     color: #555;
 }
-
 
 /* Стилі для футера */
 footer {
@@ -85,13 +84,20 @@ footer img {
 }
 
 /* Стилі для навігаційного посилання */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрування елементів по горизонталі */
+    justify-content: center; /* Центрування елементів по вертикалі */
+    padding: 20px;
+}
+
 header a {
     display: inline-block;
     margin: 10px 0;
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
-    margin: auto;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
