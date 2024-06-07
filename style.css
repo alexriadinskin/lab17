@@ -106,13 +106,3 @@ header a:hover {
         font-size: 90%;
     }
 }
-
-@font-face {
-font-family: 'Dnipro City (Дніпро) Regular';
-src: url('DniproCity-Regular.eot');
-src: url('DniproCity-Regular.eot?#iefix') format('embedded-opentype'),
-url('DniproCity-Regular.woff') format('woff'),
-url('DniproCity-Regular.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
