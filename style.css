@@ -20,6 +20,7 @@ main {
     padding: 20px;
 }
 
+
 /* Стилі для галереї */
 .gallery {
     display: flex;
@@ -41,18 +42,24 @@ main {
     margin: 10px;
     padding: 15px;
     width: 300px;
+    height: 400px; /* Фіксована висота для всіх боксів */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    transition: transform 0.3s ease; /* Додаємо плавну анімацію трансформації */
+    overflow: hidden; /* Приховуємо будь-який контент, що виходить за межі боксу */
 }
 
+.art-item:hover {
+    transform: scale(1.1); /* Збільшення боксу при наведенні */
+}
 
 .art-item img {
     max-width: 100%;
+    max-height: 250px; /* Обмежуємо максимальну висоту зображення */
+    object-fit: cover; /* Зберігаємо пропорції зображення */
     border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease; /* Додаємо плавну анімацію трансформації */
 }
-
-.art-item:hover img {
-    transform: scale(1.1); /* Збільшення зображення при наведенні */
 
 .art-info {
     padding: 10px;
@@ -62,6 +69,7 @@ main {
     margin: 0.5em 0;
     color: #555;
 }
+
 
 /* Стилі для футера */
 footer {
